@@ -263,7 +263,7 @@ int main(void)
 						if(previous!=27) {
 							special_flag=true;
 							special_ratio=1;
-							speed(255,-20,100);
+							speed(255,-50,100);
 						}
 						special_flag=false;
 						led7(26);
@@ -276,7 +276,7 @@ int main(void)
 						if(previous!=27) {
 							special_flag=true;
 							special_ratio=1;
-							speed(255,-40,100);
+							speed(255,-60,100);
 						}
 						special_flag=false;
 						led7(27);
@@ -289,7 +289,7 @@ int main(void)
 						if(previous!=28) {
 							special_flag=true;
 							special_ratio=1;
-							speed(255,-60,80);
+							speed(255,-70,80);
 						}
 						special_flag=false;
 						led7(28);
@@ -302,7 +302,7 @@ int main(void)
 						if(previous!=29){
 							special_flag=true;
 							special_ratio=1;
-							speed(255,-70,80);
+							speed(255,-80,80);
 						}
 						special_flag=false;
 						led7(29);
@@ -315,7 +315,7 @@ int main(void)
 						special_ratio=1;
 						handle(handle_case_210);
 						if(previous!=210) {
-							speed(255,-80,70);
+							speed(255,-90,70);
 						}
 						special_flag=false;
 						led7(210);
@@ -416,7 +416,7 @@ int main(void)
 						if(previous!=37) {
 							special_flag=1;
 							special_ratio=1;
-							speed(-20,255,100);
+							speed(-50,255,100);
 						}
 						special_flag=false;
 						previous=36;
@@ -428,7 +428,7 @@ int main(void)
 						if(previous!=37) {
 							special_flag=1;
 							special_ratio=1;
-							speed(-40,255,100);
+							speed(-60,255,100);
 						}
 						special_flag=false;
 						previous=37;
@@ -440,7 +440,7 @@ int main(void)
 						if(previous!=38) {
 							special_flag=1;
 							special_ratio=1;
-							speed(-60,255,80);
+							speed(-70,255,80);
 						}
 						special_flag=false;
 						previous=38;
@@ -453,7 +453,7 @@ int main(void)
 						if(previous!=39) {
 							special_flag=1;
 							special_ratio=1;
-							speed(-70,255,100);
+							speed(-80,255,100);
 						}
 						special_flag=false;
 						previous=39;
@@ -466,7 +466,7 @@ int main(void)
 						special_flag=true;
 						special_ratio=1;
 						if(previous!=310) {
-							speed(-80,255,100);
+							speed(-90,255,100);
 						}
 						special_flag=false;
 						previous=310;
@@ -922,9 +922,10 @@ void case_41() {
 			case 0b11100000:
 			case 0b11000000:
 			case 0b10000000:
-				if(return_flag && pulse_v_special>=90) {
+				if(return_flag && pulse_v_special>=50) {
 					return;
 				}
+				break;
 		}
 		if(pulse_time_case_special>time_increase) {
 			special_flag=false;
